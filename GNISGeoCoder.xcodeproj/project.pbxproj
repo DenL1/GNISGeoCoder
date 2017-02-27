@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		62D3F7EB1E5D9F2A00BAEB6C /* GNIS SQLite3 DB */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 62D3F7EC1E5D9F2A00BAEB6C /* Build configuration list for PBXAggregateTarget "GNIS SQLite3 DB" */;
+			buildPhases = (
+				620475771E5DC6A3004BC426 /* ShellScript */,
+				62D0513D1E600DB8009E0080 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = "GNIS SQLite3 DB";
+			productName = "GNIS SQL3 DB";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		620475791E5DCD8E004BC426 /* sqlite3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62AD1D411E5D2231009F2ADB /* sqlite3.h */; };
+		62149EE81E3BDEF500447BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149EE71E3BDEF500447BFE /* main.m */; };
+		62149EEB1E3BDEF500447BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149EEA1E3BDEF500447BFE /* AppDelegate.m */; };
+		62149EEE1E3BDEF500447BFE /* MapGeocoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149EED1E3BDEF500447BFE /* MapGeocoderViewController.m */; };
+		62149EF11E3BDEF500447BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62149EEF1E3BDEF500447BFE /* Main.storyboard */; };
+		62149EF61E3BDEF500447BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62149EF41E3BDEF500447BFE /* LaunchScreen.storyboard */; };
+		62149F011E3BDEF500447BFE /* GNISGeoCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F001E3BDEF500447BFE /* GNISGeoCoderTests.m */; };
+		62149F241E3BDFE300447BFE /* GeoCoderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F1F1E3BDFE300447BFE /* GeoCoderTextField.m */; };
+		62149F251E3BDFE300447BFE /* GeoCoderJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F211E3BDFE300447BFE /* GeoCoderJsonParser.m */; };
+		62149F261E3BDFE300447BFE /* GeoCodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F231E3BDFE300447BFE /* GeoCodeTableViewCell.m */; };
+		62149F2B1E3BE00200447BFE /* ForwardGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F281E3BE00200447BFE /* ForwardGeocoder.m */; };
+		62149F2C1E3BE00200447BFE /* ForwardGeoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F2A1E3BE00200447BFE /* ForwardGeoResult.m */; };
+		62149F2F1E3BE1FB00447BFE /* MapDistanceKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F2E1E3BE1FB00447BFE /* MapDistanceKeyView.m */; };
+		62149F301E3BE80E00447BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62149EF21E3BDEF500447BFE /* Assets.xcassets */; };
+		62149F321E3BE83A00447BFE /* Logos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62149F311E3BE83A00447BFE /* Logos.xcassets */; };
+		62149F351E3BE8BC00447BFE /* NetworkConnected.m in Sources */ = {isa = PBXBuildFile; fileRef = 62149F341E3BE8BC00447BFE /* NetworkConnected.m */; };
+		62149F381E3BFC6C00447BFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62149F371E3BFC6C00447BFE /* MapKit.framework */; };
+		624E49921E49213400A69539 /* GNISDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 624E49911E49213400A69539 /* GNISDatabase.m */; };
+		624E49971E492B0200A69539 /* GNISGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 624E49961E492B0200A69539 /* GNISGeocoder.m */; };
+		625A32B81E63970900B87EFE /* Usage.png in Resources */ = {isa = PBXBuildFile; fileRef = 625A32B61E63970900B87EFE /* Usage.png */; };
+		62AD1D3B1E5D21E3009F2ADB /* SQLite3_17_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AD1D3A1E5D21E3009F2ADB /* SQLite3_17_0.m */; };
+		62AD1D3C1E5D21E3009F2ADB /* SQLite3_17_0.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62AD1D391E5D21E3009F2ADB /* SQLite3_17_0.h */; };
+		62AD1D421E5D2231009F2ADB /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 62AD1D401E5D2231009F2ADB /* sqlite3.c */; };
+		62B5B2CA1E4A8B1A00834BE6 /* gnis_NAmer.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 62B5B2C91E4A8B1A00834BE6 /* gnis_NAmer.sqlite3 */; };
+		62D051401E601F5F009E0080 /* libSQLite3-17-0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AD1D371E5D21E3009F2ADB /* libSQLite3-17-0.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62149EFD1E3BDEF500447BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62149EDB1E3BDEF500447BFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62149EE21E3BDEF500447BFE;
+			remoteInfo = GNISGeoCoder;
+		};
+		62D3F8021E5DB2D800BAEB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62149EDB1E3BDEF500447BFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62D3F7EB1E5D9F2A00BAEB6C;
+			remoteInfo = "GNIS SQL3 DB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62AD1D351E5D21E3009F2ADB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				620475791E5DCD8E004BC426 /* sqlite3.h in CopyFiles */,
+				62AD1D3C1E5D21E3009F2ADB /* SQLite3_17_0.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D0513D1E600DB8009E0080 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		620475781E5DC760004BC426 /* RunScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunScript.sh; sourceTree = "<group>"; };
+		6207BF711E63E8EE0074E6F0 /* gnis_US.csv.part_1of5.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_US.csv.part_1of5.gz; sourceTree = "<group>"; };
+		6207BF731E63E8F50074E6F0 /* gnis_US.csv.part_2of5.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_US.csv.part_2of5.gz; sourceTree = "<group>"; };
+		6207BF751E63E8F90074E6F0 /* gnis_US.csv.part_3of5.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_US.csv.part_3of5.gz; sourceTree = "<group>"; };
+		6207BF771E63E8FE0074E6F0 /* gnis_US.csv.part_4of5.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_US.csv.part_4of5.gz; sourceTree = "<group>"; };
+		6207BF791E63E9020074E6F0 /* gnis_US.csv.part_5of5.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_US.csv.part_5of5.gz; sourceTree = "<group>"; };
+		62149EE31E3BDEF500447BFE /* GNISGeoCoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNISGeoCoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62149EE71E3BDEF500447BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62149EE91E3BDEF500447BFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		62149EEA1E3BDEF500447BFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		62149EEC1E3BDEF500447BFE /* MapGeocoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapGeocoderViewController.h; sourceTree = "<group>"; };
+		62149EED1E3BDEF500447BFE /* MapGeocoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapGeocoderViewController.m; sourceTree = "<group>"; };
+		62149EF01E3BDEF500447BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62149EF21E3BDEF500447BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62149EF51E3BDEF500447BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62149EF71E3BDEF500447BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62149EFC1E3BDEF500447BFE /* GNISGeoCoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNISGeoCoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62149F001E3BDEF500447BFE /* GNISGeoCoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNISGeoCoderTests.m; sourceTree = "<group>"; };
+		62149F021E3BDEF500447BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62149F1E1E3BDFE300447BFE /* GeoCoderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoderTextField.h; sourceTree = "<group>"; };
+		62149F1F1E3BDFE300447BFE /* GeoCoderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCoderTextField.m; sourceTree = "<group>"; };
+		62149F201E3BDFE300447BFE /* GeoCoderJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCoderJsonParser.h; sourceTree = "<group>"; };
+		62149F211E3BDFE300447BFE /* GeoCoderJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCoderJsonParser.m; sourceTree = "<group>"; };
+		62149F221E3BDFE300447BFE /* GeoCodeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCodeTableViewCell.h; sourceTree = "<group>"; };
+		62149F231E3BDFE300447BFE /* GeoCodeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCodeTableViewCell.m; sourceTree = "<group>"; };
+		62149F271E3BE00200447BFE /* ForwardGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardGeocoder.h; sourceTree = "<group>"; };
+		62149F281E3BE00200447BFE /* ForwardGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardGeocoder.m; sourceTree = "<group>"; };
+		62149F291E3BE00200447BFE /* ForwardGeoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardGeoResult.h; sourceTree = "<group>"; };
+		62149F2A1E3BE00200447BFE /* ForwardGeoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardGeoResult.m; sourceTree = "<group>"; };
+		62149F2D1E3BE1FB00447BFE /* MapDistanceKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDistanceKeyView.h; sourceTree = "<group>"; };
+		62149F2E1E3BE1FB00447BFE /* MapDistanceKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDistanceKeyView.m; sourceTree = "<group>"; };
+		62149F311E3BE83A00447BFE /* Logos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Logos.xcassets; sourceTree = "<group>"; };
+		62149F331E3BE8BC00447BFE /* NetworkConnected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnected.h; sourceTree = "<group>"; };
+		62149F341E3BE8BC00447BFE /* NetworkConnected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnected.m; sourceTree = "<group>"; };
+		62149F371E3BFC6C00447BFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		624E49901E49213400A69539 /* GNISDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNISDatabase.h; sourceTree = "<group>"; };
+		624E49911E49213400A69539 /* GNISDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNISDatabase.m; sourceTree = "<group>"; };
+		624E49951E492B0200A69539 /* GNISGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNISGeocoder.h; sourceTree = "<group>"; };
+		624E49961E492B0200A69539 /* GNISGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNISGeocoder.m; sourceTree = "<group>"; };
+		625A32B61E63970900B87EFE /* Usage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Usage.png; sourceTree = "<group>"; };
+		625A32B71E63970900B87EFE /* Usage.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Usage.xcf; sourceTree = "<group>"; };
+		6278222A1E565098000F2A39 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		6278222C1E5678AB000F2A39 /* gnis_CA.csv.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gnis_CA.csv.gz; sourceTree = "<group>"; };
+		62AD1D371E5D21E3009F2ADB /* libSQLite3-17-0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSQLite3-17-0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AD1D391E5D21E3009F2ADB /* SQLite3_17_0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLite3_17_0.h; sourceTree = "<group>"; };
+		62AD1D3A1E5D21E3009F2ADB /* SQLite3_17_0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLite3_17_0.m; sourceTree = "<group>"; };
+		62AD1D401E5D2231009F2ADB /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		62AD1D411E5D2231009F2ADB /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		62B374BD1E60E4950056BFBB /* UNLICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
+		62B5B2C91E4A8B1A00834BE6 /* gnis_NAmer.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gnis_NAmer.sqlite3; sourceTree = "<group>"; };
+		62B5B2CB1E4A8B5400834BE6 /* README-GNIS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-GNIS.txt"; sourceTree = "<group>"; };
+		62B5B2CD1E4A8C1900834BE6 /* gnis2sqlite.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gnis2sqlite.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62149EE01E3BDEF500447BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D051401E601F5F009E0080 /* libSQLite3-17-0.a in Frameworks */,
+				62149F381E3BFC6C00447BFE /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62149EF91E3BDEF500447BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AD1D341E5D21E3009F2ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62149EDA1E3BDEF500447BFE = {
+			isa = PBXGroup;
+			children = (
+				62B374BD1E60E4950056BFBB /* UNLICENSE.txt */,
+				62B5B2CB1E4A8B5400834BE6 /* README-GNIS.txt */,
+				62149EE51E3BDEF500447BFE /* GNISGeoCoder */,
+				62149F1D1E3BDFB600447BFE /* Forward GeoCoder TextField */,
+				62149EFF1E3BDEF500447BFE /* GNISGeoCoderTests */,
+				624AFAF41E5FDCB000D23CA1 /* GNIS SQLite3 DB */,
+				62AD1D381E5D21E3009F2ADB /* SQLite3-17-0 */,
+				62149EE41E3BDEF500447BFE /* Products */,
+				62149F361E3BFC6C00447BFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62149EE41E3BDEF500447BFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62149EE31E3BDEF500447BFE /* GNISGeoCoder.app */,
+				62149EFC1E3BDEF500447BFE /* GNISGeoCoderTests.xctest */,
+				62AD1D371E5D21E3009F2ADB /* libSQLite3-17-0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62149EE51E3BDEF500447BFE /* GNISGeoCoder */ = {
+			isa = PBXGroup;
+			children = (
+				62149EE91E3BDEF500447BFE /* AppDelegate.h */,
+				62149EEA1E3BDEF500447BFE /* AppDelegate.m */,
+				62149EEC1E3BDEF500447BFE /* MapGeocoderViewController.h */,
+				62149EED1E3BDEF500447BFE /* MapGeocoderViewController.m */,
+				62149EEF1E3BDEF500447BFE /* Main.storyboard */,
+				62149EF21E3BDEF500447BFE /* Assets.xcassets */,
+				62149F311E3BE83A00447BFE /* Logos.xcassets */,
+				62149EF41E3BDEF500447BFE /* LaunchScreen.storyboard */,
+				62149EF71E3BDEF500447BFE /* Info.plist */,
+				62149F2D1E3BE1FB00447BFE /* MapDistanceKeyView.h */,
+				62149F2E1E3BE1FB00447BFE /* MapDistanceKeyView.m */,
+				62149F331E3BE8BC00447BFE /* NetworkConnected.h */,
+				62149F341E3BE8BC00447BFE /* NetworkConnected.m */,
+				6278222A1E565098000F2A39 /* Project.h */,
+				625A32B51E6396EC00B87EFE /* Misc */,
+				62149EE61E3BDEF500447BFE /* Supporting Files */,
+			);
+			path = GNISGeoCoder;
+			sourceTree = "<group>";
+		};
+		62149EE61E3BDEF500447BFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62149EE71E3BDEF500447BFE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62149EFF1E3BDEF500447BFE /* GNISGeoCoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				62149F001E3BDEF500447BFE /* GNISGeoCoderTests.m */,
+				62149F021E3BDEF500447BFE /* Info.plist */,
+			);
+			path = GNISGeoCoderTests;
+			sourceTree = "<group>";
+		};
+		62149F1D1E3BDFB600447BFE /* Forward GeoCoder TextField */ = {
+			isa = PBXGroup;
+			children = (
+				62149F1E1E3BDFE300447BFE /* GeoCoderTextField.h */,
+				62149F1F1E3BDFE300447BFE /* GeoCoderTextField.m */,
+				62149F221E3BDFE300447BFE /* GeoCodeTableViewCell.h */,
+				62149F231E3BDFE300447BFE /* GeoCodeTableViewCell.m */,
+				62149F291E3BE00200447BFE /* ForwardGeoResult.h */,
+				62149F2A1E3BE00200447BFE /* ForwardGeoResult.m */,
+				624E498D1E4920D100A69539 /* GNIS Forward Geocoder */,
+				62FBBF591E57A4E50095DD9F /* Google Forward Geocoder */,
+			);
+			name = "Forward GeoCoder TextField";
+			path = GNISGeoCoder;
+			sourceTree = "<group>";
+		};
+		62149F361E3BFC6C00447BFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62149F371E3BFC6C00447BFE /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		624AFAF41E5FDCB000D23CA1 /* GNIS SQLite3 DB */ = {
+			isa = PBXGroup;
+			children = (
+				62B5B2CC1E4A8BCA00834BE6 /* Products */,
+				62B5B2CD1E4A8C1900834BE6 /* gnis2sqlite.py */,
+				6207BF711E63E8EE0074E6F0 /* gnis_US.csv.part_1of5.gz */,
+				6207BF731E63E8F50074E6F0 /* gnis_US.csv.part_2of5.gz */,
+				6207BF751E63E8F90074E6F0 /* gnis_US.csv.part_3of5.gz */,
+				6207BF771E63E8FE0074E6F0 /* gnis_US.csv.part_4of5.gz */,
+				6207BF791E63E9020074E6F0 /* gnis_US.csv.part_5of5.gz */,
+				6278222C1E5678AB000F2A39 /* gnis_CA.csv.gz */,
+				620475781E5DC760004BC426 /* RunScript.sh */,
+			);
+			name = "GNIS SQLite3 DB";
+			path = GNISGeoCoder;
+			sourceTree = "<group>";
+		};
+		624E498D1E4920D100A69539 /* GNIS Forward Geocoder */ = {
+			isa = PBXGroup;
+			children = (
+				624E49951E492B0200A69539 /* GNISGeocoder.h */,
+				624E49961E492B0200A69539 /* GNISGeocoder.m */,
+				624E49901E49213400A69539 /* GNISDatabase.h */,
+				624E49911E49213400A69539 /* GNISDatabase.m */,
+			);
+			name = "GNIS Forward Geocoder";
+			sourceTree = "<group>";
+		};
+		625A32B51E6396EC00B87EFE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				625A32B61E63970900B87EFE /* Usage.png */,
+				625A32B71E63970900B87EFE /* Usage.xcf */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		62AD1D381E5D21E3009F2ADB /* SQLite3-17-0 */ = {
+			isa = PBXGroup;
+			children = (
+				62AD1D391E5D21E3009F2ADB /* SQLite3_17_0.h */,
+				62AD1D3A1E5D21E3009F2ADB /* SQLite3_17_0.m */,
+				62AD1D411E5D2231009F2ADB /* sqlite3.h */,
+				62AD1D401E5D2231009F2ADB /* sqlite3.c */,
+			);
+			path = "SQLite3-17-0";
+			sourceTree = "<group>";
+		};
+		62B5B2CC1E4A8BCA00834BE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B5B2C91E4A8B1A00834BE6 /* gnis_NAmer.sqlite3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62FBBF591E57A4E50095DD9F /* Google Forward Geocoder */ = {
+			isa = PBXGroup;
+			children = (
+				62149F271E3BE00200447BFE /* ForwardGeocoder.h */,
+				62149F281E3BE00200447BFE /* ForwardGeocoder.m */,
+				62149F201E3BDFE300447BFE /* GeoCoderJsonParser.h */,
+				62149F211E3BDFE300447BFE /* GeoCoderJsonParser.m */,
+			);
+			name = "Google Forward Geocoder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62149EE21E3BDEF500447BFE /* GNISGeoCoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62149F101E3BDEF500447BFE /* Build configuration list for PBXNativeTarget "GNISGeoCoder" */;
+			buildPhases = (
+				62149EDF1E3BDEF500447BFE /* Sources */,
+				62149EE01E3BDEF500447BFE /* Frameworks */,
+				62149EE11E3BDEF500447BFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D3F8031E5DB2D800BAEB6C /* PBXTargetDependency */,
+			);
+			name = GNISGeoCoder;
+			productName = GNISGeoCoder;
+			productReference = 62149EE31E3BDEF500447BFE /* GNISGeoCoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62149EFB1E3BDEF500447BFE /* GNISGeoCoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62149F131E3BDEF500447BFE /* Build configuration list for PBXNativeTarget "GNISGeoCoderTests" */;
+			buildPhases = (
+				62149EF81E3BDEF500447BFE /* Sources */,
+				62149EF91E3BDEF500447BFE /* Frameworks */,
+				62149EFA1E3BDEF500447BFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62149EFE1E3BDEF500447BFE /* PBXTargetDependency */,
+			);
+			name = GNISGeoCoderTests;
+			productName = GNISGeoCoderTests;
+			productReference = 62149EFC1E3BDEF500447BFE /* GNISGeoCoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62AD1D361E5D21E3009F2ADB /* SQLite3-17-0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62AD1D3D1E5D21E3009F2ADB /* Build configuration list for PBXNativeTarget "SQLite3-17-0" */;
+			buildPhases = (
+				62AD1D331E5D21E3009F2ADB /* Sources */,
+				62AD1D341E5D21E3009F2ADB /* Frameworks */,
+				62AD1D351E5D21E3009F2ADB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SQLite3-17-0";
+			productName = "SQLite3-17-0";
+			productReference = 62AD1D371E5D21E3009F2ADB /* libSQLite3-17-0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62149EDB1E3BDEF500447BFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dennis E. Lindsey";
+				TargetAttributes = {
+					62149EE21E3BDEF500447BFE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					62149EFB1E3BDEF500447BFE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 62149EE21E3BDEF500447BFE;
+					};
+					62AD1D361E5D21E3009F2ADB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4EGADU3RF9;
+						ProvisioningStyle = Automatic;
+					};
+					62D3F7EB1E5D9F2A00BAEB6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4EGADU3RF9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 62149EDE1E3BDEF500447BFE /* Build configuration list for PBXProject "GNISGeoCoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62149EDA1E3BDEF500447BFE;
+			productRefGroup = 62149EE41E3BDEF500447BFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62149EE21E3BDEF500447BFE /* GNISGeoCoder */,
+				62149EFB1E3BDEF500447BFE /* GNISGeoCoderTests */,
+				62AD1D361E5D21E3009F2ADB /* SQLite3-17-0 */,
+				62D3F7EB1E5D9F2A00BAEB6C /* GNIS SQLite3 DB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62149EE11E3BDEF500447BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62149EF61E3BDEF500447BFE /* LaunchScreen.storyboard in Resources */,
+				62149F301E3BE80E00447BFE /* Assets.xcassets in Resources */,
+				62149F321E3BE83A00447BFE /* Logos.xcassets in Resources */,
+				62149EF11E3BDEF500447BFE /* Main.storyboard in Resources */,
+				625A32B81E63970900B87EFE /* Usage.png in Resources */,
+				62B5B2CA1E4A8B1A00834BE6 /* gnis_NAmer.sqlite3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62149EFA1E3BDEF500447BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		620475771E5DC6A3004BC426 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/${PROJECT}/RunScript.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62149EDF1E3BDEF500447BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624E49921E49213400A69539 /* GNISDatabase.m in Sources */,
+				62149EEE1E3BDEF500447BFE /* MapGeocoderViewController.m in Sources */,
+				62149EEB1E3BDEF500447BFE /* AppDelegate.m in Sources */,
+				62149F251E3BDFE300447BFE /* GeoCoderJsonParser.m in Sources */,
+				62149F261E3BDFE300447BFE /* GeoCodeTableViewCell.m in Sources */,
+				62149F351E3BE8BC00447BFE /* NetworkConnected.m in Sources */,
+				624E49971E492B0200A69539 /* GNISGeocoder.m in Sources */,
+				62149F2F1E3BE1FB00447BFE /* MapDistanceKeyView.m in Sources */,
+				62149F2C1E3BE00200447BFE /* ForwardGeoResult.m in Sources */,
+				62149EE81E3BDEF500447BFE /* main.m in Sources */,
+				62149F241E3BDFE300447BFE /* GeoCoderTextField.m in Sources */,
+				62149F2B1E3BE00200447BFE /* ForwardGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62149EF81E3BDEF500447BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62149F011E3BDEF500447BFE /* GNISGeoCoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62AD1D331E5D21E3009F2ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AD1D3B1E5D21E3009F2ADB /* SQLite3_17_0.m in Sources */,
+				62AD1D421E5D2231009F2ADB /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62149EFE1E3BDEF500447BFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62149EE21E3BDEF500447BFE /* GNISGeoCoder */;
+			targetProxy = 62149EFD1E3BDEF500447BFE /* PBXContainerItemProxy */;
+		};
+		62D3F8031E5DB2D800BAEB6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62D3F7EB1E5D9F2A00BAEB6C /* GNIS SQLite3 DB */;
+			targetProxy = 62D3F8021E5DB2D800BAEB6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62149EEF1E3BDEF500447BFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62149EF01E3BDEF500447BFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62149EF41E3BDEF500447BFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62149EF51E3BDEF500447BFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62149F0E1E3BDEF500447BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62149F0F1E3BDEF500447BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62149F111E3BDEF500447BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lindsey.dennis.Applications.GNISGeoCoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62149F121E3BDEF500447BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lindsey.dennis.Applications.GNISGeoCoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62149F141E3BDEF500447BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Idiome-Applications.GNISGeoCoderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNISGeoCoder.app/GNISGeoCoder";
+			};
+			name = Debug;
+		};
+		62149F151E3BDEF500447BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Idiome-Applications.GNISGeoCoderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNISGeoCoder.app/GNISGeoCoder";
+			};
+			name = Release;
+		};
+		62AD1D3E1E5D21E3009F2ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"SQLITE_ENABLE_RTREE=1",
+					"SQLITE_ENABLE_FTS4=1",
+					"SQLITE_THREADSAFE=0",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		62AD1D3F1E5D21E3009F2ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"SQLITE_ENABLE_RTREE=1",
+					"SQLITE_ENABLE_FTS4=1",
+					"SQLITE_THREADSAFE=0",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		62B374BF1E60F1C40056BFBB /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TESTCFG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		62B374C01E60F1C40056BFBB /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lindsey.dennis.Applications.GNISGeoCoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		62B374C11E60F1C40056BFBB /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GNISGeoCoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Idiome-Applications.GNISGeoCoderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNISGeoCoder.app/GNISGeoCoder";
+			};
+			name = Test;
+		};
+		62B374C31E60F1C40056BFBB /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"SQLITE_ENABLE_RTREE=1",
+					"SQLITE_ENABLE_FTS4=1",
+					"SQLITE_THREADSAFE=0",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Test;
+		};
+		62B374C41E60F1C40056BFBB /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		62D3F7ED1E5D9F2A00BAEB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62D3F7EE1E5D9F2A00BAEB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4EGADU3RF9;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62149EDE1E3BDEF500447BFE /* Build configuration list for PBXProject "GNISGeoCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62149F0E1E3BDEF500447BFE /* Debug */,
+				62B374BF1E60F1C40056BFBB /* Test */,
+				62149F0F1E3BDEF500447BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62149F101E3BDEF500447BFE /* Build configuration list for PBXNativeTarget "GNISGeoCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62149F111E3BDEF500447BFE /* Debug */,
+				62B374C01E60F1C40056BFBB /* Test */,
+				62149F121E3BDEF500447BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62149F131E3BDEF500447BFE /* Build configuration list for PBXNativeTarget "GNISGeoCoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62149F141E3BDEF500447BFE /* Debug */,
+				62B374C11E60F1C40056BFBB /* Test */,
+				62149F151E3BDEF500447BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62AD1D3D1E5D21E3009F2ADB /* Build configuration list for PBXNativeTarget "SQLite3-17-0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AD1D3E1E5D21E3009F2ADB /* Debug */,
+				62B374C31E60F1C40056BFBB /* Test */,
+				62AD1D3F1E5D21E3009F2ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D3F7EC1E5D9F2A00BAEB6C /* Build configuration list for PBXAggregateTarget "GNIS SQLite3 DB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D3F7ED1E5D9F2A00BAEB6C /* Debug */,
+				62B374C41E60F1C40056BFBB /* Test */,
+				62D3F7EE1E5D9F2A00BAEB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62149EDB1E3BDEF500447BFE /* Project object */;
+}

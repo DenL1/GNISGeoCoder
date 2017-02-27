@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GNIS SQLite3 DB.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GNISGeoCoder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SQLite3-17-0.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>62149EE21E3BDEF500447BFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62149EFB1E3BDEF500447BFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62149F061E3BDEF500447BFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62AD1D361E5D21E3009F2ADB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62D3F7E71E5D9F0400BAEB6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62D3F7EB1E5D9F2A00BAEB6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62D3F8041E5DB44400BAEB6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
